@@ -40,6 +40,7 @@ body{
 
 #hr_stylings{
     border-color: #dd3444;
+    border-width: 0.25rem;
     width: 70px; 
 }
 
