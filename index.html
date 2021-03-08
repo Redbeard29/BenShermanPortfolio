@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!------ Bootstrap CDN ----->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous">
+
+            <!------ Linked CSS sheet ----->
+            <link rel="stylesheet" href="css/app.css">
+
+            <!------ Font Awesome Icons ----->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+            <!------ Imported Fonts ----->
+            <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,500,700" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+            
+            <title>Ben Sherman Portfolio</title>
+        </head>
+        <body>
+
+            <!------ Nav Bar ----->
+            <nav class="navbar navbar-expand-md navbar-dark py-3">
+                <a href="#" class="navbar-brand">
+                    <h3 class="mx-3 mb-0 text-danger">HOME</h3>
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#showcase" class="nav-link active text-uppercase">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link text-uppercase">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#explore" class="nav-link text-uppercase">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#newsletter" class="nav-link text-uppercase">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!------ Showcase ----->
+            <div id="showcase" class="d-flex justify-content-center align-items-center">
+                <div id="overlay"></div>
+                <div id="header" class= "container text-center text-white p-5">
+                    <h1 class="display-1 text-uppercase mb-4">hello!</h3>
+                    <hr class="d-none d-lg-block mx-auto m-0 mb-5" id="hr_stylings">
+                    <h4 class="text-uppercase mb-3">My name is Ben Sherman.</h1>
+                    <h4 class="text-uppercase">I'm a full-stack developer.</h1>
+                    <button id="book" class="btn btn-lg btn-danger px-5 mt-5 text-uppercase" data-toggle="modal" data-target="#">see my work</button>
+                </div>
+            </div>
+
+            <!------ About ----->
+            <div class="container my-5">
+                <h3 class="mb-3 text-center font-weight-bold">About</h3>
+                <hr class="d-none d-lg-block mx-auto m-0 mb-5" id="hr_stylings">
+                <div class="row">
+                  <div class="col text-center pt-3">
+                    <img src="images/PortfolioPic.jpg" alt="self image" id="profile_pic" class="shadow-lg p-1 mb-4 bg-dark rounded">
+                    <h4 class="font-weight-bold mb-3">Who am I?</h4>
+                    <p class="text-muted mb-0"> I'm a junior-level full-stack developer based in the Pittsburgh area.</p>
+                    <p class="text-muted mb-2">I have a passion for using my creative talents and problem-solving abilities to improve the lives of others through programming.</p>
+                    <a href="">Let's Connect!</a>
+                  </div>
+                  <div class="col">
+                    <div class="card border-danger mb-3 bg-transparent shadow-lg">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-3 text-center">
+                            <i class="fas fa-code-branch fa-5x text-danger mb-2" id="about_logos"></i>
+                          </div>
+                          <div class="col-9 text-right">
+                            <h4 class="card-title text-uppercase text-dark">Versatile</h4>
+                            <hr>
+                            <p class="text-muted">Text here about being versatile</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card border-danger mb-3 bg-transparent shadow-lg">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-3 text-center">
+                            <i class="fas fa-window-restore fa-5x text-danger mb-2" id="about_logos"></i>
+                          </div>
+                          <div class="col-9 text-right">
+                            <h4 class="card-title text-uppercase">Responsive</h4>
+                            <hr>
+                            <p class="text-muted">Text here about being responsive</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card border-danger mb-3 bg-transparent shadow-lg">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-3 text-center">
+                            <i class="fas fa-shipping-fast fa-5x text-danger mb-2" id="about_logos"></i>
+                          </div>
+                          <div class="col-9 text-right">
+                            <h4 class="card-title text-uppercase">Optimized</h4>
+                            <hr>
+                            <p class="text-muted">Text here about being optimized</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card border-danger mb-3 bg-transparent shadow-lg">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-3 text-center">
+                            <i class="fas fa-hand-holding fa-5x text-danger mb-2" id="about_logos"></i>
+                          </div>
+                          <div class="col-9 text-right">
+                            <h4 class="card-title text-uppercase">Engaging</h4>
+                            <hr>
+                            <p class="text-muted">Text here about being engaging</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="card mb-5 border-danger bg-transparent shadow-lg" id="language_listing">
+                    <h5 class="card-header border-danger text-center">Full Stack Development Experience:</h5>
+                    <div class="card-body text-center">
+                      <img src="images/javascriptlogo.png" alt="jslogo" id="tech_logos" class="m-3">
+                      <img src="images/Csharplogo.png" alt="c#logo" id="tech_logos" class="m-3">
+                      <img src="images/sqllogo.png" alt="sqllogo" id="tech_logos" class="m-3">
+                      <img src="images/react.png" alt="reactlogo" id="tech_logos" class="m-3">
+                      <img src="images/python.png" alt="pythonlogo" id="tech_logos" class="m-3">
+                      <img src="images/bootstrap.png" alt="bootstraplogo" id="tech_logos" class="m-3">
+                      <img src="images/csslogo.png" alt="csslogo" id="tech_logos" class="m-3">
+                      <img src="images/HTMLLogo.png" alt="htmllogo" id="tech_logos" class="m-3">
+                      <hr>
+                      <p class="card-text text-muted">JavaScript, C#, SQL, React, Python, Bootstrap, CSS, HTML</p>
+                    </div>
+                    <div class="card-footer border-danger justify-content-center">
+                      <a href="#" class="btn btn-outline-danger d-block text-uppercase py-2 my-1">View Projects</a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!------ Portfolio ----->
+            <section id="portfolio">
+              <div class="container py-4">
+                <h3 class="text-center mb-4 font-weight-bold text-white">Portfolio</h3>
+                <hr class="d-none d-lg-block mx-auto m-0 mb-5" id="hr_stylings">
+                <div class="container d-flex justify-content-center">
+                    <div class="row">
+                        <div class="d-flex">
+                            <h5 class="mx-3 text-white">All</h5>
+                            <h5 class="mx-3 text-white">JavaScript</h5>
+                            <h5 class="mx-3 text-white">C#</h5>
+                            <h5 class="mx-3 text-white">Python</h5>
+                            <h5 class="mx-3 text-white">React</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+      <!-- Resume Section -->
+      <section id="resume" class="resume-section text-center mt-5">
+        <div class="container py-4">
+          <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="mb-2 font-weight-bold">Resume</h2>
+              <hr class="d-none d-lg-block mx-auto m-0 mb-5" id="hr_stylings">
+              <br>
+              <a href="https://docs.google.com/document/d/1JnQA2ifp9mEunQD_1ToZut2IaoAqWXECnq9mwDYVmvk/edit?usp=sharing" target="_blank" class="btn btn-danger py-2 px-5">
+                DOWNLOAD</a>
+            </div>
+          </div>
+            <!-- <img src="img/ipad.png" class="img-fluid" alt=""> -->
+        </div>
+      </section>
+  
+  
+  
+      <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container py-5">
+            <div class="row">
+  
+              
+                <div class="col-md-10 col-lg-8 mx-auto text-center mb-5">
+      
+                  <i class="fas fa-envelope fa-2x text-white"></i>
+                  <h2 class="mb-5 text-white">Let's Connect!</h2>
+           
+                  <form>
+                      <div class="form-group text-white">
+                          <!-- <label for="exampleInputName">Name</label> -->
+                          <input type="name" class="form-control" id="exampleInputName" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                          <!-- <label for="exampleInputEmail">Email</label> -->
+                          <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+                      </div>                        
+                      <div class="form-group">
+                          <!-- <label for="exampleFormControlTextarea1">Message</label> -->
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Your Message"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-danger mt-3 mx-auto text-uppercase py-2 px-5">Submit</button>
+                  </form>    
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3 mb-md-0">
+                <div class="card py-2 h-100 border border-white bg-transparent">
+                  <div class="card-body text-center">
+                    <i class="fab fa-github text-danger mb-2"></i>
+                    <h4 class="text-uppercase text-white m-0">GitHub</h4>
+                    <hr class="my-4" id="hr_stylings">
+                    <div class="small text-black-50">
+                      <a href="https://github.com/Redbeard29" target="_blank" class="text-white">https://github.com/Redbeard29</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3 mb-md-0">
+                <div class="card py-2 h-100 border border-white bg-transparent">
+                  <div class="card-body text-center text-white">
+                    <i class="fab fa-linkedin text-danger mb-2"></i>
+                    <h4 class="text-uppercase m-0">LinkedIn</h4>
+                    <hr class="my-4" id="hr_stylings">
+                    <div class="small text-black-50">
+                      <a href="https://www.linkedin.com/in/benjamin-sherman-98b2b41b1/" target="_blank" class="text-white">https://www.linkedin.com/in/benjamin-sherman-98b2b41b1/</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3 mb-md-0">
+                <div class="card py-2 h-100 border border-white bg-transparent">
+                  <div class="card-body text-center">
+                    <i class="fas fa-envelope text-danger mb-2"></i>
+                    <h4 class="text-uppercase text-white m-0">Email</h4>
+                    <hr class="my-4" id="hr_stylings">
+                    <div class="small">
+                      <a href="mailto:ben@benshermanmusic.com" class="text-white">ben@benshermanmusic.com</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-md-3 mb-3 mb-md-0">
+                <div class="card py-2 h-100 border border-white bg-transparent">
+                  <div class="card-body text-center">
+                    <i class="fas fa-mobile-alt text-danger mb-2"></i>
+                    <h4 class="text-uppercase text-white m-0">Phone</h4>
+                    <hr class="my-4" id="hr_stylings">
+                    <div class="small text-white">+1 (310) 748-9324</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </section>
+  
+      <!-- Footer -->
+      <section id="footer" class="p-3 bg-dark small text-center text-white">
+        <div class="container my-3">
+          Copyright &copy; Ben Sherman 2021
+        </div>
+      </section>
+  
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+      <!-- Plugin JavaScript -->
+      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+      <!-- isotope -->
+      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+      <!-- Custom scripts for this template -->
+      <script src="js/grayscale.js"></script>
+            
+        </body>
+</html>
