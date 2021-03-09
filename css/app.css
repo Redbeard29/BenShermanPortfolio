@@ -52,3 +52,25 @@ body{
   background-color:#131618;
 }
 
+#hidden_element, #hr_stylings{
+  opacity: 0;
+}
+
+
+@media (max-width: 768px) {
+  #showcase_heading{
+    font-size: 5rem; 
+  } 
+  #showcase_subheading{
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #showcase_heading{
+    font-size: 4.5rem; 
+  } 
+  #showcase_subheading{
+    font-size: 1.2rem;
+  }
+}

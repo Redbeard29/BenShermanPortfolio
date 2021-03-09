@@ -9,9 +9,6 @@
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
             crossorigin="anonymous">
 
-            <!------ jQuery CDN ----->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
             <!------ Linked CSS sheet ----->
             <link rel="stylesheet" href="css/app.css">
 
@@ -21,23 +18,28 @@
             <!------ Imported Fonts ----->
             <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,500,700" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             
             <title>Ben Sherman Portfolio</title>
         </head>
         <body>
 
           <!------ Nav Bar ----->
-          <nav class="navbar navbar-expand-md navbar-dark fixed-top py-3">
+          <nav class="navbar navbar-expand-md navbar-dark py-3">
               <a href="#" class="navbar-brand">
-                  <h3 class="mx-3 mb-0 text-danger">HOME</h3>
+                  <h3 class="mx-3 mb-0 d-none d-md-flex text-danger">HOME</h3>
               </a>
               <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
                   <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="mainNavbar">
                   <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a href="#showcase" class="d-md-none nav-link active text-uppercase text-danger">Home</a>
+                    </li>
                       <li class="nav-item">
-                          <a href="#showcase" class="nav-link active text-uppercase">About</a>
+                          <a href="#showcase" class="nav-link text-uppercase">About</a>
                       </li>
                       <li class="nav-item">
                           <a href="#about" class="nav-link text-uppercase">Portfolio</a>
@@ -56,29 +58,29 @@
             <div id="showcase" class="d-flex justify-content-center align-items-center">
               <div id="overlay"></div>
               <div id="header" class= "container text-center text-white p-5">
-                  <h1 class="display-1 text-uppercase mb-4">hello!</h3>
-                  <hr class="d-none d-lg-block mx-auto m-0 mb-5" id="hr_stylings">
-                  <h4 class="text-uppercase mb-3">My name is Ben Sherman.</h1>
-                  <h4 class="text-uppercase">I'm a full-stack developer.</h1>
-                  <button id="book" class="btn btn-lg btn-danger px-5 mt-5 text-uppercase" data-toggle="modal" data-target="#" id="see_my_work_button">see my work</button>
+                  <h1 class="display-1 text-uppercase mb-4" id="showcase_heading">hello!</h3>
+                  <hr class="d-block mx-auto m-0 mb-5" id="hr_stylings">
+                  <h4 class="text-uppercase mb-3" id="showcase_subheading">My name is Ben Sherman.</h1>
+                  <h4 class="text-uppercase" id="showcase_subheading">I'm a full-stack developer.</h1>
+                  <button class="btn btn-lg btn-danger px-5 mt-5 text-uppercase" id="see_my_work_button">see my work</button>
               </div>
             </div>
 
             <!------ About ----->
-            <div class="container py-5" id="about_section">
-                <h2 class="mb-3 mt-5 text-center text-uppercase font-weight-bold">About</h2>
-                <hr class="d-none d-lg-block mx-auto m-0 mb-5" id="hr_stylings">
-                <div class="row">
+            <div class="container px-0 py-5" id="about_section">
+                <h2 class="mb-3 mt-5 text-center text-uppercase font-weight-bold" id="hidden_element">About</h2>
+                <hr class="d-block mx-auto m-0 mb-5" id="hr_stylings">
+                <div class="row px-4 px-md-0">
                   <div class="col text-center py-1 px-4">
-                    <img src="images/PortfolioPic.jpg" alt="self image" id="profile_pic" class="shadow-lg p-1 mb-4 bg-dark rounded">
-                    <h4 class="font-weight-bold my-3">Who am I?</h4>
-                    <hr class="d-none d-lg-block mx-auto m-0 mb-3" id="hr_stylings">
-                    <p class="text-muted mb-0"> I'm a junior-level full-stack developer based in the Pittsburgh area.</p>
-                    <p class="text-muted mb-2">I have a passion for using my creative talents and problem-solving abilities to improve the lives of others through programming.</p>
-                    <button class="btn btn-outline-danger">Let's Connect!</button>
+                    <img src="images/PortfolioPic.jpg" alt="self image" id="hidden_element" class="shadow-lg p-1 mb-4 bg-dark rounded">
+                    <h4 class="font-weight-bold my-3" id="hidden_element">Who am I?</h4>
+                    <hr class="d-block mx-auto m-0 mb-4" id="hr_stylings">
+                    <p class="text-muted mb-0" id="hidden_element"> I'm a junior-level full-stack developer based in the Pittsburgh area.</p>
+                    <p class="text-muted mb-2" id="hidden_element">I have a passion for using my creative talents and problem-solving abilities to improve the lives of others through programming.</p>
+                    <button class="btn btn-outline-danger px-4 mt-4" id="hidden_element">Let's Connect!</button>
                   </div>
-                  <div class="col pl-5">
-                    <div class="card border-danger mb-3 bg-transparent shadow-lg" id="attribute_cards">
+                  <div class="col pl-md-5">
+                    <div class="card border-danger mb-3 bg-transparent shadow-lg mt-5 mt-md-0" id="hidden_element">
                       <div class="card-body">
                         <div class="row align-items-center">
                           <div class="col-3 text-center">
@@ -87,30 +89,30 @@
                           <div class="col-9 text-right">
                             <h4 class="card-title text-uppercase text-dark">Versatile</h4>
                             <hr>
-                            <p class="text-muted">Text here about being versatile</p>
+                            <p class="text-muted">Experienced in front and back-end development, QA, and database design.</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="card border-danger mb-3 bg-transparent shadow-lg" id="attribute_cards">
+                    <div class="card border-danger mb-3 bg-transparent shadow-lg" id="hidden_element">
                       <div class="card-body">
                         <div class="row align-items-center">
                           <div class="col-3 text-center">
-                            <i class="fas fa-window-restore fa-5x text-danger mb-2" id="about_logos"></i>
+                            <i class="fas fa-tablet-alt fa-5x text-danger mb-2"></i>
                           </div>
                           <div class="col-9 text-right">
                             <h4 class="card-title text-uppercase">Responsive</h4>
                             <hr>
-                            <p class="text-muted">Text here about being responsive</p>
+                            <p class="text-muted">My apps look good on a variety of devices - including phones, tablets, and computers.</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="card border-danger mb-3 bg-transparent shadow-lg" id="attribute_cards">
+                    <div class="card border-danger mb-3 bg-transparent shadow-lg" id="hidden_element">
                       <div class="card-body">
                         <div class="row align-items-center">
                           <div class="col-3 text-center">
-                            <i class="fas fa-shipping-fast fa-5x text-danger mb-2" id="about_logos"></i>
+                            <i class="fas fa-tachometer-alt fa-5x text-danger mb-2" id="about_logos"></i>
                           </div>
                           <div class="col-9 text-right">
                             <h4 class="card-title text-uppercase">Optimized</h4>
@@ -120,16 +122,16 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card border-danger mb-5 bg-transparent shadow-lg" id="attribute_cards">
+                    <div class="card border-danger mb-5 bg-transparent shadow-lg" id="hidden_element">
                       <div class="card-body">
                         <div class="row">
                           <div class="col-3 text-center">
-                            <i class="fas fa-hand-holding fa-5x text-danger mb-2" id="about_logos"></i>
+                            <i class="fas fa-cubes fa-5x text-danger mt-3"></i>
                           </div>
                           <div class="col-9 text-right">
-                            <h4 class="card-title text-uppercase">Engaging</h4>
+                            <h4 class="card-title text-uppercase">Scalable</h4>
                             <hr>
-                            <p class="text-muted">Text here about being engaging</p>
+                            <p class="text-muted">I build applications with clean, efficient, production-ready code that's easily scalable. </p>
                           </div>
                         </div>
                       </div>
@@ -137,8 +139,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="row justify-content-center mb-5">
-                  <div class="card mb-5 border-danger bg-transparent shadow-lg" id="language_listing">
+                <div class="row justify-content-center mb-5 px-4 px-md-0">
+                  <div class="card mb-5 border-danger bg-transparent shadow-lg" id="hidden_element">
                     <h5 class="card-header border-danger text-center">Full Stack Development Experience:</h5>
                     <div class="card-body text-center">
                       <img src="images/javascriptlogo.png" alt="jslogo" id="tech_logos" class="m-3">
@@ -162,16 +164,16 @@
             <!------ Portfolio ----->
             <section id="portfolio">
               <div class="container py-5">
-                <h2 class="text-center mt-5 mb-3 font-weight-bold text-white text-uppercase">Portfolio</h2>
-                <hr class="d-none d-lg-block mx-auto m-0 mb-5" id="hr_stylings">
+                <h2 class="text-center mt-5 mb-3 font-weight-bold text-white text-uppercase" id="hidden_element">Portfolio</h2>
+                <hr class="d-block mx-auto m-0 mb-5" id="hr_stylings">
                 <div class="container d-flex justify-content-center">
                     <div class="row mb-5">
                         <div class="d-flex">
-                            <h5 class="mx-3 text-white">All</h5>
-                            <h5 class="mx-3 text-white">JavaScript</h5>
-                            <h5 class="mx-3 text-white">C#</h5>
-                            <h5 class="mx-3 text-white">Python</h5>
-                            <h5 class="mx-3 text-white">React</h5>
+                            <h5 class="mx-3 text-white" id="hidden_element">All</h5>
+                            <h5 class="mx-3 text-white" id="hidden_element">JavaScript</h5>
+                            <h5 class="mx-3 text-white" id="hidden_element">C#</h5>
+                            <h5 class="mx-3 text-white" id="hidden_element">Python</h5>
+                            <h5 class="mx-3 text-white" id="hidden_element">React</h5>
                         </div>
                     </div>
                 </div>
@@ -183,10 +185,10 @@
         <div class="container py-5">
           <div class="row align-items-center">
             <div class="col-lg-8 mx-auto">
-              <h2 class="mb-3 font-weight-bold text-uppercase">Resume</h2>
-              <hr class="d-none d-lg-block mx-auto m-0 mb-3" id="hr_stylings">
+              <h2 class="mb-3 font-weight-bold text-uppercase" id="hidden_element">Resume</h2>
+              <hr class="d-block mx-auto m-0 mb-4" id="hr_stylings">
               <br>
-              <a href="https://docs.google.com/document/d/1JnQA2ifp9mEunQD_1ToZut2IaoAqWXECnq9mwDYVmvk/edit?usp=sharing" target="_blank" class="btn btn-outline-danger mb-5 py-2 px-5">
+              <a href="https://docs.google.com/document/d/1JnQA2ifp9mEunQD_1ToZut2IaoAqWXECnq9mwDYVmvk/edit?usp=sharing" target="_blank" class="btn btn-outline-danger mb-5 py-2 px-5" id="hidden_element">
                 DOWNLOAD</a>
             </div>
           </div>
@@ -204,17 +206,17 @@
               
                 <div class="col-md-10 col-lg-8 mx-auto text-center mb-5">
       
-                  <i class="fas fa-envelope fa-2x text-white"></i>
-                  <h2 class="mb-5 text-white">Let's Connect!</h2>
+                  <i class="fas fa-envelope fa-2x text-white" id="hidden_element"></i>
+                  <h2 class="mb-5 text-white" id="hidden_element">Let's Connect!</h2>
            
-                  <form>
+                  <form id="hidden_element">
                       <div class="form-group text-white">
                           <!-- <label for="exampleInputName">Name</label> -->
                           <input type="name" class="form-control" id="exampleInputName" placeholder="Name">
                       </div>
                       <div class="form-group">
                           <!-- <label for="exampleInputEmail">Email</label> -->
-                          <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+                          <input type="email" class="form-control" id="exampleInputEmail" placeholder="Email">
                       </div>                        
                       <div class="form-group">
                           <!-- <label for="exampleFormControlTextarea1">Message</label> -->
@@ -225,8 +227,8 @@
                 </div>
             </div>
             <div class="row mb-5">
-              <div class="col-md-3 mb-3 mb-md-0">
-                <div class="card py-2 h-100 border border-white bg-transparent">
+              <div class="col-lg-3 col-md-6 mb-3 mb-3 mb-lg-0">
+                <div class="card py-2 h-100 border border-white bg-transparent" id="hidden_element">
                   <div class="card-body text-center">
                     <i class="fab fa-github text-danger mb-2"></i>
                     <h4 class="text-uppercase text-white m-0">GitHub</h4>
@@ -237,8 +239,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 mb-3 mb-md-0">
-                <div class="card py-2 h-100 border border-white bg-transparent">
+              <div class="col-lg-3 col-md-6 mb-3 mb-3 mb-lg-0 mt-3 mt-md-0">
+                <div class="card py-2 h-100 border border-white bg-transparent" id="hidden_element">
                   <div class="card-body text-center text-white">
                     <i class="fab fa-linkedin text-danger mb-2"></i>
                     <h4 class="text-uppercase m-0">LinkedIn</h4>
@@ -249,8 +251,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 mb-3 mb-md-0">
-                <div class="card py-2 h-100 border border-white bg-transparent">
+              <div class="col-lg-3 col-md-6 mb-3 mb-md-0 mt-3 mt-lg-0">
+                <div class="card py-2 h-100 border border-white bg-transparent" id="hidden_element">
                   <div class="card-body text-center">
                     <i class="fas fa-envelope text-danger mb-2"></i>
                     <h4 class="text-uppercase text-white m-0">Email</h4>
@@ -261,9 +263,8 @@
                   </div>
                 </div>
               </div>
-    
-              <div class="col-md-3 mb-3 mb-md-0">
-                <div class="card py-2 h-100 border border-white bg-transparent">
+              <div class="col-lg-3 col-md-6 mb-3 mb-md-0 mt-3 mt-lg-0">
+                <div class="card py-2 h-100 border border-white bg-transparent" id="hidden_element">
                   <div class="card-body text-center">
                     <i class="fas fa-mobile-alt text-danger mb-2"></i>
                     <h4 class="text-uppercase text-white m-0">Phone</h4>
@@ -281,25 +282,12 @@
           Copyright &copy; Ben Sherman 2021
         </div>
       </section>
-      <script>
-        $(document).ready(function(){
-          //dynamically appearing elements on scroll
-          $("#about_section").scroll(function(){
-            $("#attribute_cards").show("slow");
-          });
-        });
-      </script>
-      <script src="https://code.jquery.com/jquery.js"></script>
-      <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
-      <!-- Plugin JavaScript -->
-      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-      <!-- isotope -->
-      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-      <!-- Custom scripts for this template -->
-      <script src="js/grayscale.js"></script>
-            
+      <script src="script.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
         </body>
 </html>
