@@ -1,4 +1,4 @@
-#tech_logos{
+.tech_logos{
     height: 50px;
 }
 #profile_pic{
@@ -38,7 +38,7 @@ body{
       #showcase h1 {
         font-weight: 450;}
 
-#hr_stylings{
+.hr_stylings, #showcase_hr{
     border-color: #dd3444;
     border-width: 0.25rem;
     width: 70px; 
@@ -52,7 +52,7 @@ body{
   background-color:#131618;
 }
 
-#hidden_element, #hr_stylings{
+.hidden_element{
   opacity: 0;
 }
 
