@@ -27,7 +27,7 @@
 
           <!------ Nav Bar ----->
           <nav class="navbar navbar-expand-md navbar-dark py-3">
-              <a href="#" class="navbar-brand">
+              <a href="#showcase" class="navbar-brand">
                   <h3 class="mx-3 mb-0 d-none d-md-flex text-danger">HOME</h3>
               </a>
               <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
@@ -39,16 +39,16 @@
                       <a href="#showcase" class="d-md-none nav-link active text-uppercase text-danger">Home</a>
                     </li>
                       <li class="nav-item">
-                          <a href="#showcase" class="nav-link text-uppercase">About</a>
+                          <a href="#about_section" class="nav-link text-uppercase" id="about_nav_link">About</a>
                       </li>
                       <li class="nav-item">
-                          <a href="#about" class="nav-link text-uppercase">Portfolio</a>
+                          <a href="#portfolio_section" class="nav-link text-uppercase" id="portfolio_nav_link">Portfolio</a>
                       </li>
                       <li class="nav-item">
-                          <a href="#explore" class="nav-link text-uppercase">Resume</a>
+                          <a href="#resume_section" class="nav-link text-uppercase" id="resume_nav_link">Resume</a>
                       </li>
                       <li class="nav-item">
-                          <a href="#newsletter" class="nav-link text-uppercase">Contact</a>
+                          <a href="#contact_section" class="nav-link text-uppercase" id="contact_nav_link">Contact</a>
                       </li>
                   </ul>
               </div>
@@ -62,7 +62,7 @@
                   <hr class="d-block mx-auto m-0 mb-5" id="showcase_hr">
                   <h4 class="text-uppercase mb-3" id="showcase_subheading">My name is Ben Sherman.</h1>
                   <h4 class="text-uppercase" id="showcase_subheading">I'm a full-stack developer.</h1>
-                  <button class="btn btn-lg btn-danger px-5 mt-5 text-uppercase" id="see_my_work_button">see my work</button>
+                  <a href="#portfolio_section" class="btn btn-lg btn-danger px-5 mt-5 text-uppercase" id="see_my_work_button">See my work</a>
               </div>
             </div>
 
@@ -71,16 +71,16 @@
                 <h2 class="mb-3 mt-5 text-center text-uppercase font-weight-bold hidden_element">About</h2>
                 <hr class="d-block mx-auto m-0 mb-5 hidden_element hr_stylings">
                 <div class="row px-4 px-md-0">
-                  <div class="col text-center py-1 px-4">
+                  <div class="col col-lg-6 text-center px-4">
                     <img src="images/PortfolioPic.jpg" alt="self image" class="shadow-lg p-1 mb-4 bg-dark rounded">
                     <h4 class="font-weight-bold my-3 hidden_element">Who am I?</h4>
                     <hr class="d-block mx-auto m-0 mb-4 hidden_element hr_stylings">
                     <p class="text-muted mb-0 hidden_element"> I'm a junior-level full-stack developer based in the Pittsburgh area.</p>
                     <p class="text-muted mb-2 hidden_element">I have a passion for using my creative talents and problem-solving abilities to improve the lives of others through programming.</p>
-                    <button class="btn btn-outline-danger px-4 mt-4 hidden_element">Let's Connect!</button>
+                    <a href="#contact_section" class="btn btn-outline-danger text-uppercase py-2 px-4 mt-4 hidden_element" id="lets_connect_button">Let's Connect!</a>
                   </div>
-                  <div class="col pl-md-5">
-                    <div class="card border-danger mb-3 bg-transparent shadow-lg mt-5 mt-md-0 hidden_element">
+                  <div class="col-lg-6 pl-lg-5">
+                    <div class="card border-danger mb-3 bg-transparent shadow-lg mt-5 mt-lg-0 hidden_element">
                       <div class="card-body">
                         <div class="row align-items-center">
                           <div class="col-3 text-center">
@@ -88,13 +88,13 @@
                           </div>
                           <div class="col-9 text-right">
                             <h4 class="card-title text-uppercase text-dark">Versatile</h4>
-                            <hr>
+                            <hr class="about_card_hrs">
                             <p class="text-muted">Experienced in front and back-end development, QA, and database design.</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="card border-danger mb-5 bg-transparent shadow-lg hidden_element">
+                    <div class="card border-danger mb-3 mt-4 bg-transparent shadow-lg hidden_element">
                       <div class="card-body">
                         <div class="row">
                           <div class="col-3 text-center">
@@ -102,13 +102,13 @@
                           </div>
                           <div class="col-9 text-right">
                             <h4 class="card-title text-uppercase">Scalable</h4>
-                            <hr>
+                            <hr class="about_card_hrs">
                             <p class="text-muted">I build applications with clean, efficient, production-ready code that's easily scalable. </p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="card border-danger mb-3 bg-transparent shadow-lg hidden_element">
+                    <div class="card border-danger mb-3 mt-4 bg-transparent shadow-lg hidden_element">
                       <div class="card-body">
                         <div class="row align-items-center">
                           <div class="col-3 text-center">
@@ -116,13 +116,13 @@
                           </div>
                           <div class="col-9 text-right">
                             <h4 class="card-title text-uppercase">Logical</h4>
-                            <hr>
+                            <hr class="about_card_hrs">
                             <p class="text-muted">Intuitive design is essential to my process in every aspect of an application.</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="card border-danger mb-3 bg-transparent shadow-lg hidden_element">
+                    <div class="card border-danger mb-3 mt-4 bg-transparent shadow-lg hidden_element">
                       <div class="card-body">
                         <div class="row align-items-center">
                           <div class="col-3 text-center">
@@ -130,7 +130,7 @@
                           </div>
                           <div class="col-9 text-right">
                             <h4 class="card-title text-uppercase">Responsive</h4>
-                            <hr>
+                            <hr class="about_card_hrs">
                             <p class="text-muted">My apps look good on a variety of devices - including phones, tablets, and computers.</p>
                           </div>
                         </div>
@@ -155,14 +155,14 @@
                       <p class="card-text text-muted">JavaScript, C#, SQL, React, Python, Bootstrap, CSS, HTML</p>
                     </div>
                     <div class="card-footer border-danger justify-content-center">
-                      <a href="#" class="btn btn-outline-danger d-block text-uppercase py-2 my-1">View Projects</a>
+                      <a href="#portfolio_section" class="btn btn-outline-danger d-block text-uppercase py-2 my-1" id="view_projects_button">View Projects</a>
                     </div>
                 </div>
             </div>
             
 
             <!------ Portfolio ----->
-            <section id="portfolio">
+            <section id="portfolio_section">
               <div class="container py-5">
                 <h2 class="text-center mt-5 mb-3 font-weight-bold text-white text-uppercase hidden_element">Portfolio</h2>
                 <hr class="d-block mx-auto m-0 mb-5 hidden_element hr_stylings">
@@ -181,14 +181,14 @@
             </section>
 
       <!-- Resume Section -->
-      <section id="resume" class="resume-section text-center mt-5">
+      <section id="resume_section" class="text-center mt-5">
         <div class="container py-5">
           <div class="row align-items-center">
             <div class="col-lg-8 mx-auto">
               <h2 class="mb-3 font-weight-bold text-uppercase hidden_element">Resume</h2>
               <hr class="d-block mx-auto m-0 mb-4 hidden_element hr_stylings">
               <br>
-              <a href="https://docs.google.com/document/d/1JnQA2ifp9mEunQD_1ToZut2IaoAqWXECnq9mwDYVmvk/edit?usp=sharing" target="_blank" class="btn btn-outline-danger mb-5 py-2 px-5 hidden_element">
+              <a href="https://docs.google.com/document/d/1UMG6vVuPkZUEk6Lcy7jMnRL0AE9XqP3Ny_SDCZxAkw4/edit" target="_blank" class="btn btn-outline-danger mb-5 py-2 px-5 hidden_element">
                 DOWNLOAD</a>
             </div>
           </div>
@@ -199,7 +199,7 @@
   
   
       <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact_section">
         <div class="container py-5">
             <div class="row py-5">
   
@@ -269,7 +269,7 @@
                     <i class="fas fa-mobile-alt text-danger mb-2"></i>
                     <h4 class="text-uppercase text-white m-0">Phone</h4>
                     <hr class="my-4 hidden_element hr_stylings">
-                    <div class="small text-white">+1 (310) 748-9324</div>
+                    <div class="small text-white">Available upon request</div>
                   </div>
                 </div>
               </div>
