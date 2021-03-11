@@ -18,6 +18,8 @@ $(document).ready(function() {
       
         }); 
     });
+    /* Scrolling to sections */
+
     //See my work button scroll 
     $("#see_my_work_button").click(function(){
         $('html, body').animate({
@@ -53,4 +55,21 @@ $(document).ready(function() {
         $('html, body').animate({
             scrollTop: $("#contact_section").offset().top}, 2000);
     });
+
+    /* Filtering by language */
+
+    //Click portfolio container items
+    $('#portfolio_container h5').click(function(){
+
+        var language = $(this).attr('data-filter');
+        
+        if(language === 'All'){
+            $("#project_container").children('div').show();
+        }
+        else{
+            $('#project_container').children('div:not([data-filter=' + language + '])').hide();
+            $('#project_container').children('div[data-filter=' + language + ']').show();
+        }
+    });
+    return false;
 });

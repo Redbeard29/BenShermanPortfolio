@@ -44,6 +44,19 @@ body{
     width: 70px; 
 }
 
+.project_hrs{
+  border-color: #dd3444;
+  border-width: 0.1rem;
+}
+
+.hidden_element{
+  opacity: 0;
+}
+
+.project_screenshots{
+  height: 300px;
+}
+
 #portfolio_section{
   background-color: #333b3f;
 }
@@ -52,9 +65,6 @@ body{
   background-color:#131618;
 }
 
-.hidden_element{
-  opacity: 0;
-}
 
 
 @media (max-width: 768px) {

@@ -38,18 +38,18 @@
                     <li class="nav-item">
                       <a href="#showcase" class="d-md-none nav-link active text-uppercase text-danger">Home</a>
                     </li>
-                      <li class="nav-item">
-                          <a href="#about_section" class="nav-link text-uppercase" id="about_nav_link">About</a>
-                      </li>
-                      <li class="nav-item">
-                          <a href="#portfolio_section" class="nav-link text-uppercase" id="portfolio_nav_link">Portfolio</a>
-                      </li>
-                      <li class="nav-item">
-                          <a href="#resume_section" class="nav-link text-uppercase" id="resume_nav_link">Resume</a>
-                      </li>
-                      <li class="nav-item">
-                          <a href="#contact_section" class="nav-link text-uppercase" id="contact_nav_link">Contact</a>
-                      </li>
+                    <li class="nav-item">
+                        <a href="#about_section" class="nav-link text-uppercase" id="about_nav_link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio_section" class="nav-link text-uppercase" id="portfolio_nav_link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume_section" class="nav-link text-uppercase" id="resume_nav_link">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact_section" class="nav-link text-uppercase" id="contact_nav_link">Contact</a>
+                    </li>
                   </ul>
               </div>
           </nav>
@@ -72,7 +72,7 @@
                 <hr class="d-block mx-auto m-0 mb-5 hidden_element hr_stylings">
                 <div class="row px-4 px-md-0">
                   <div class="col col-lg-6 text-center px-4">
-                    <img src="images/PortfolioPic.jpg" alt="self image" class="shadow-lg p-1 mb-4 bg-dark rounded">
+                    <img src="images/PortfolioPic.jpg" alt="image_of_self" class="shadow-lg p-1 mb-4 bg-dark rounded">
                     <h4 class="font-weight-bold my-3 hidden_element">Who am I?</h4>
                     <hr class="d-block mx-auto m-0 mb-4 hidden_element hr_stylings">
                     <p class="text-muted mb-0 hidden_element"> I'm a junior-level full-stack developer based in the Pittsburgh area.</p>
@@ -166,16 +166,56 @@
               <div class="container py-5">
                 <h2 class="text-center mt-5 mb-3 font-weight-bold text-white text-uppercase hidden_element">Portfolio</h2>
                 <hr class="d-block mx-auto m-0 mb-5 hidden_element hr_stylings">
+                <!------ Filtering by language ----->
                 <div class="container d-flex justify-content-center">
-                    <div class="row mb-5">
-                        <div class="d-flex">
-                            <h5 class="mx-3 text-white hidden_element">All</h5>
-                            <h5 class="mx-3 text-white hidden_element">JavaScript</h5>
-                            <h5 class="mx-3 text-white hidden_element">C#</h5>
-                            <h5 class="mx-3 text-white hidden_element">Python</h5>
-                            <h5 class="mx-3 text-white hidden_element">React</h5>
+                  <div class="row mb-5">
+                      <div class="d-flex" id="portfolio_container">
+                          <h5 data-filter="All" class="mx-3 text-danger hidden_element">All</h5>
+                          <h5 data-filter="JavaScript" class="mx-3 text-white hidden_element">JavaScript</h5>
+                          <h5 data-filter="CSharp" class="mx-3 text-white hidden_element">C#</h5>
+                          <h5 data-filter="Python" class="mx-3 text-white hidden_element">Python</h5>
+                          <h5 data-filter="React" class="mx-3 text-white hidden_element">React</h5>
+                      </div>
+                  </div>
+                </div>
+                <div class="container" id="project_container">
+
+                  <!------ Standard Records Project ----->
+                  <div class="card border-danger bg-transparent mt-3 hidden_element" data-filter="Python">
+                    <div class="row no-gutters">
+                      <div class="col-md-6">
+                        <img src="images/StandardRecordsScreenshot.jpeg" class="card-img" alt="Standard Records Project">
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h4 class="card-title text-uppercase text-white">Standard Records</h4>
+                          <hr class="project_hrs">
+                          <p class="text-white">E-Commerce site for buying specialty vinyl products, including a product database for owner inventory management.</p>
+                          <p class="text-white">Built using Python, Django, Bootstrap, jQuery, HTML, CSS and GitHub</p>
+                          <a href="https://github.com/October2020PandA/BenShermanSoloProject" target="_blank"><i class="fab fa-github-square fa-3x text-danger"></i></a>
                         </div>
+                      </div>
                     </div>
+                  </div>
+
+                  <!------ Custom Restaurant Management Project ----->
+                  <div class="card border-danger mb-5 bg-transparent mt-4 mt-md-2 hidden_element" data-filter="Python">
+                    <div class="row no-gutters">
+                      <div class="col-md-6">
+                        <img src="images/CustomRestaurantManagementScreenshot.jpeg" alt="Custom Restaurant Management Project" class="card-img">
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h4 class="card-title text-uppercase text-white">Custom Restaurant Management</h4>
+                          <hr class="project_hrs">
+                          <p class="text-white">Customizable template for restaurants including website, online ordering app, inventory management, and POS system.</p>
+                          <p class="text-white">Built using Python, Django, Bootstrap, jQuery, HTML, CSS and GitHub</p>
+                          <a href="https://github.com/October2020PandA/menu-group/tree/SecondBenBranch" target="_blank"><i class="fab fa-github-square fa-3x text-danger"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 </div>
             </div>
             </section>
@@ -275,7 +315,6 @@
               </div>
             </div>
     </section>
-  
       <!-- Footer -->
       <section id="footer" class="p-3 bg-dark small text-center text-white">
         <div class="container my-3">
