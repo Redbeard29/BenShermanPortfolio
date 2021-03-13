@@ -17,6 +17,7 @@ $(document).ready(function() {
             }
       
         }); 
+
     });
     /* Scrolling to sections */
 
@@ -81,11 +82,11 @@ $(document).ready(function() {
         var language = $(this).attr('data-filter');
         
         if(language === 'All'){
-            $("#project_container").children('div').show();
+            $("#project_container").children('div').slideDown(700);
         }
         else{
-            $('#project_container').children('div:not([data-filter=' + language + '])').hide();
-            $('#project_container').children('div[data-filter=' + language + ']').show();
+            $('#project_container').children('div:not([data-filter=' + language + '])').slideUp(700);
+            $('#project_container').children('div[data-filter=' + language + ']').slideDown(700);
         }
     });
     return false;
