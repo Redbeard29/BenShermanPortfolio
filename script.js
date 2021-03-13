@@ -62,6 +62,12 @@ $(document).ready(function() {
             scrollTop: $("#contact_section").offset().top}, 2000);
     });
 
+    //Back to top scroll
+    $("#back_to_top_button").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#showcase").offset().top}, 1000);
+    });
+
 
     /* Filtering by language */
 
