@@ -1,9 +1,7 @@
 .tech_logos{
     height: 50px;
 }
-#profile_pic{
-    height: 380px;
-}
+
 body{
     font-family: "Raleway", sans-serif;
     background: linear-gradient(#d6d5d5, white);
@@ -77,5 +75,8 @@ body{
   } 
   #showcase_subheading{
     font-size: 1.2rem;
+  }
+  #profile_pic{
+    height: 380px;
   }
 }
