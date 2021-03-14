@@ -85,6 +85,7 @@ $(document).ready(function() {
             $("#project_container").children('div').slideDown(700);
         }
         else{
+            console.log(language);
             $('#project_container').children('div:not([data-filter=' + language + '])').slideUp(700);
             $('#project_container').children('div[data-filter=' + language + ']').slideDown(700);
         }
