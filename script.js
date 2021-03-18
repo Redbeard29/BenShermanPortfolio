@@ -70,25 +70,23 @@ $(document).ready(function() {
     });
 
 
-    /* Filtering by language */
+    /* Filtering by language using isotope */
 
-    //Click portfolio container items
-    $('#portfolio_container h5').click(function(){
+    var $grid = $('.grid').isotope({
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows'
+    });
+
+    $('#portfolio_container h5').on("click", function(){
 
         $("#portfolio_container h5").removeClass("text-danger").addClass("text-white");
-
         $(this).addClass("text-danger");
 
         var language = $(this).attr('data-filter');
-        
-        if(language === 'All'){
-            $("#project_container").children('div').slideDown(700);
-        }
-        else{
-            console.log(language);
-            $('#project_container').children('div:not([data-filter=' + language + '])').slideUp(700);
-            $('#project_container').children('div[data-filter=' + language + ']').slideDown(700);
-        }
+        $grid.isotope({
+            filter: language
+        });
     });
+
     return false;
 });

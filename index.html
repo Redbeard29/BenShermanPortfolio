@@ -174,12 +174,12 @@
           <div class="container d-flex justify-content-center">
             <div class="row">
               <div class="d-flex" id="portfolio_container">
-                <h5 data-filter="All" class="mx-3 text-danger hidden_element">All</h5>
-                <h5 data-filter="JavaScript" class="d-sm-none mx-3 text-white hidden_element">JS</h5>
-                <h5 data-filter="JavaScript" class="d-none d-sm-flex mx-3 text-white hidden_element">JavaScript</h5>
-                <h5 data-filter="CSharp" class="mx-3 text-white hidden_element">C#</h5>
-                <h5 data-filter="Python" class="mx-3 text-white hidden_element">Python</h5>
-                <h5 data-filter="React" class="mx-3 text-white hidden_element">React</h5>
+                <h5 data-filter="*" class="mx-3 text-danger hidden_element">All</h5>
+                <h5 data-filter=".JavaScript" class="d-sm-none mx-3 text-white hidden_element">JS</h5>
+                <h5 data-filter=".JavaScript" class="d-none d-sm-flex mx-3 text-white hidden_element">JavaScript</h5>
+                <h5 data-filter=".CSharp" class="mx-3 text-white hidden_element">C#</h5>
+                <h5 data-filter=".Python" class="mx-3 text-white hidden_element">Python</h5>
+                <h5 data-filter=".React" class="mx-3 text-white hidden_element">React</h5>
               </div>
             </div>
           </div>
@@ -187,9 +187,9 @@
 
         <!------ Project Display ----->
         <div class="container pb-5">
-          <div class="row mb-5 px-3 px-md-0" id="project_container">
+          <div class="row mb-5 px-3 px-md-0 grid" id="project_container">
             <!------ Standard Records Project ----->
-            <div class="card border-danger bg-transparent shadow-lg mt-3 project_display" data-filter="Python">
+            <div class="card border-danger bg-transparent shadow-lg mt-3 project_display grid-item Python">
               <div class="row no-gutters">
                 <div class="col-lg-6">
                   <img src="images/StandardRecordsScreenshot.jpeg" class="card-img" alt="Standard Records Project">
@@ -207,7 +207,7 @@
             </div>
 
             <!------ Custom Restaurant Management Project ----->
-            <div class="card border-danger mb-5 bg-transparent mt-4 mt-lg-2 shadow-lg project_display" data-filter="Python">
+            <div class="card border-left-0 border-danger mb-5 bg-transparent mt-4 mt-lg-2 shadow-lg project_display grid-item Python">
               <div class="row no-gutters">
                 <div class="col-lg-6">
                   <img src="images/CustomRestaurantManagementScreenshot.jpeg" alt="Custom Restaurant Management Project" class="card-img">
@@ -336,5 +336,8 @@
       <!-- Bootstrap.js --> 
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
           crossorigin="anonymous"></script>
+      <!-- Isotope.js --> 
+      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
     </body>
   </html>
