@@ -1,4 +1,9 @@
 $(document).ready(function() {
+
+    /* Navbar toggler animations */
+    $('.navbar-toggler').click(function(){
+        $('.icon').toggleClass('close');
+    });
     
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
@@ -68,7 +73,6 @@ $(document).ready(function() {
         $('html, body').animate({
             scrollTop: $("#showcase").offset().top}, 1000);
     });
-
 
     /* Filtering by language using isotope */
 

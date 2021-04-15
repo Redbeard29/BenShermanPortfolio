@@ -18,6 +18,48 @@ body{
       font-weight: 600; }
     .navbar .nav-item {
       font-size: 1.3rem; }
+    .navbar .nav-item .nav-link:hover{
+      color: #dd3444;
+    }
+
+/* .navbar-toggler{
+  display: inline-block;
+  border-radius: 20px;
+  position: relative;
+  padding: 50px;
+}
+
+.line{
+  position: absolute;
+  height: 12px;
+  width: 100%;
+  background-color: white;
+  border-radius: 4px;
+  transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.25s;
+}
+
+.top{
+  top: 18%;
+}
+
+.middle{
+  top: 48%;
+}
+
+.bottom{
+  top: 78%;
+}
+
+.icon.close .top{
+  transform: rotate(45deg);
+  top: 48%;
+}
+
+.icon.close .middle, .icon.close .bottom{
+  transform: rotate(-45deg);
+  top: 48%;
+}
+*/
 
 #showcase {
     background: url("../images/portfoliocodingbackground.jpg") center/cover no-repeat;
