@@ -1,65 +1,70 @@
-.tech_logos{
-    height: 50px;
-}
-
 body{
-    font-family: "Raleway", sans-serif;
-    background: linear-gradient(#d6d5d5, white);
+  font-family: "Raleway", sans-serif;
+  background: linear-gradient(#d6d5d5, white);
 }
 
-.navbar {
-    font-weight: 600;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 3; }
-    .navbar .navbar-brand h3 {
-      font-weight: 600; }
-    .navbar .nav-item {
-      font-size: 1.3rem; }
-    .navbar .nav-item .nav-link:hover{
-      color: #dd3444;
-    }
+.custom_nav .custom_nav_brand{
+  text-decoration: none;
+}
 
-/* .navbar-toggler{
+#navigationPage .navigation_page_items{
+  list-style: none;
+}
+
+#navigationPage .navigation_page_items .nav_item .nav_links{
+  text-decoration: none;
+  font-size: 1.3rem; }
+
+.custom_nav .nav-item .nav-link:hover{
+  color: #dd3444;
+}
+
+    
+#button_container{
+  background-color: #dd3444;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 500px;
+  margin: 10px;
   position: relative;
-  padding: 50px;
+  padding: 15px;
+}
+
+.circle{
+  height: 30px;
+  width: 30px;
+  position: relative;
 }
 
 .line{
   position: absolute;
-  height: 12px;
+  height: 4px;
   width: 100%;
   background-color: white;
-  border-radius: 4px;
+  border-radius: 8px;
   transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.25s;
 }
 
-.top{
+#span1{
   top: 18%;
 }
 
-.middle{
+#span2{
   top: 48%;
 }
 
-.bottom{
+#span3{
   top: 78%;
 }
 
-.icon.close .top{
+.icon.close #span1{
   transform: rotate(45deg);
   top: 48%;
 }
 
-.icon.close .middle, .icon.close .bottom{
+.icon.close #span2, .icon.close #span3{
   transform: rotate(-45deg);
   top: 48%;
 }
-*/
 
 #showcase {
     background: url("../images/portfoliocodingbackground.jpg") center/cover no-repeat;
@@ -87,6 +92,10 @@ body{
 .project_hrs{
   border-color: #dd3444;
   border-width: 0.1rem;
+}
+
+.tech_logos{
+  height: 50px;
 }
 
 .hidden_element{

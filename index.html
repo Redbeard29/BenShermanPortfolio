@@ -26,39 +26,37 @@
     </head>
     <body>
 
-      <!------ Nav Bar ----->
-      <nav class="navbar navbar-expand-md navbar-dark py-3">
-        <a href="#showcase" class="navbar-brand">
-          <h3 class="mx-3 mb-0 d-none d-md-flex text-danger">HOME</h3>
+      <!--- Custom Navbar -->
+      <div class="custom_nav d-flex">
+        <a href="#showcase" class="custom_nav_brand d-inline-block">
+          <h3 class="mx-4 mt-4 mb-0 d-flex text-danger text-uppercase font-weight-bold">ben sherman</h3>
         </a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
-          <span class="navbar-toggler-icon"></span>
-          <!--- <div class="icon">
-            <span class="line top"></span>
-            <span class="line middle"></span>
-            <span class="line bottom"></span>
-          </div> --->
-        </button>
-        <div class="collapse navbar-collapse" id="mainNavbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="#showcase" class="d-md-none nav-link active text-uppercase text-danger">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about_section" class="nav-link text-uppercase" id="about_nav_link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#portfolio_section" class="nav-link text-uppercase" id="portfolio_nav_link">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#resume_section" class="nav-link text-uppercase" id="resume_nav_link">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact_section" class="nav-link text-uppercase" id="contact_nav_link">Contact</a>
-            </li>
-          </ul>
+        <div class="ml-auto" id="button_container">
+          <div class="circle icon" data-toggle="collapse" data-target="navigationPage">
+            <span id="span1" class="line"></span>
+            <span id="span2" class="line"></span>
+            <span id="span3" class="line"></span>
+          </div>
         </div>
-      </nav>
+      </div>
+      
+      <!--- Navigation page that will display upon button click
+      <div id="navigationPage" style="display: none;">
+        <ul class="navigation_page_items list-inline text-center">
+          <li class="nav_item">
+            <a href="#about_section" class="nav_links" id="about_nav_link"><h3 class="text-uppercase font-weight-bold text-muted my-3">About</h3></a>
+          </li>
+          <li class="nav_item">
+            <a href="#portfolio_section" class="nav_links" id="portfolio_nav_link"><h3 class="text-uppercase font-weight-bold text-muted my-3">Portfolio</h3></a>
+          </li>
+          <li class="nav_item">
+            <a href="#resume_section" class="nav_links" id="resume_nav_link"><h3 class="text-uppercase font-weight-bold text-muted my-3">Resume</h3></a>
+          </li>
+          <li class="nav_item">
+            <a href="#contact_section" class="nav_links" id="contact_nav_link"><h3 class="text-uppercase font-weight-bold text-muted my-3">Contact</h3></a>
+          </li>
+        </ul>
+      </div> -->
 
       <!------ Showcase ----->
       <div id="showcase" class="d-flex justify-content-center align-items-center">

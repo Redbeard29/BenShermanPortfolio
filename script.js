@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     /* Navbar toggler animations */
-    $('.navbar-toggler').click(function(){
+    $('#button_container').click(function(){
         $('.icon').toggleClass('close');
     });
     
