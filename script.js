@@ -3,6 +3,22 @@ $(document).ready(function() {
     /* Navbar toggler animations */
     $('#button_container').click(function(){
         $('.icon').toggleClass('close');
+        if($('.icon').hasClass('close')){
+            $('#navigationOverlay').slideDown();
+            //Disable scroll when navigationOverlay is down
+            $('html, body').css({
+                overflow: 'hidden',
+                height: '100%'
+            });
+        }
+        else{
+            $('#navigationOverlay').slideUp('slow');
+            //Reenable scroll when navigationOverlay is up
+            $('html, body').css({
+                overflow: 'auto',
+                height: 'auto'
+            });
+        }
     });
     
     /* Every time the window is scrolled ... */
@@ -48,24 +64,56 @@ $(document).ready(function() {
     $("#about_nav_link").click(function(){
         $('html, body').animate({
             scrollTop: $("#about_section").offset().top}, 2000);
+        //Hide navigationPage and close nav toggle
+        $('#navigationOverlay').slideUp('slow');
+        $('.icon').toggleClass('close');
+        //Reenable scroll when navigationOverlay is up
+        $('html, body').css({
+            overflow: 'auto',
+            height: 'auto'
+        });
     });
 
     //Portfolio nav link scroll
     $("#portfolio_nav_link").click(function(){
         $('html, body').animate({
             scrollTop: $("#portfolio_section").offset().top}, 2000);
+        //Hide navigationPage and close nav toggle
+        $('#navigationOverlay').slideUp('slow');
+        $('.icon').toggleClass('close');
+        //Reenable scroll when navigationOverlay is up
+        $('html, body').css({
+            overflow: 'auto',
+            height: 'auto'
+        });
     });
 
     //Resume nav link scroll
     $("#resume_nav_link").click(function(){
         $('html, body').animate({
             scrollTop: $("#resume_section").offset().top}, 2000);
+        //Hide navigationPage and close nav toggle
+        $('#navigationOverlay').slideUp('slow');
+        $('.icon').toggleClass('close');
+        //Reenable scroll when navigationOverlay is up
+        $('html, body').css({
+            overflow: 'auto',
+            height: 'auto'
+        });
     });
 
     //Contact nav link scroll
     $("#contact_nav_link").click(function(){
         $('html, body').animate({
             scrollTop: $("#contact_section").offset().top}, 2000);
+        //Hide navigationPage and close nav toggle
+        $('#navigationOverlay').slideUp('slow');
+        $('.icon').toggleClass('close');
+        //Reenable scroll when navigationOverlay is up
+        $('html, body').css({
+            overflow: 'auto',
+            height: 'auto'
+        });
     });
 
     //Back to top scroll

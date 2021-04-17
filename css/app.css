@@ -1,7 +1,3 @@
-.tech_logos{
-    height: 50px;
-}
-
 body{
     font-family: "Raleway", sans-serif;
     background: linear-gradient(#d6d5d5, white);
@@ -13,22 +9,33 @@ body{
     top: 0;
     right: 0;
     left: 0;
-    z-index: 3; }
-    .custom_nav .custom_nav_brand{
-      text-decoration: none;
-    }
-    .custom_nav .custom_nav_brand h3 {
-      font-weight: 600; }
-    #navigationPage .navigation_page_items{
-      list-style: none;
-    }
-    #navigationPage .navigation_page_items .nav_item .nav_links{
-      text-decoration: none;
-      font-size: 1.3rem; }
-    .custom_nav .nav-item .nav-link:hover{
-      color: #dd3444;
-    }
+    z-index: 5; 
+}
 
+.custom_nav .custom_nav_brand{
+  text-decoration: none;
+}
+
+.custom_nav .custom_nav_brand h3 {
+  font-weight: 600; 
+}
+
+#navigationOverlay .navigation_item_list{
+  margin-top: 12%;
+  list-style: none;
+}
+
+#navigationOverlay .navigation_item_list .nav_item{
+  margin-top: 60px;
+}
+
+#navigationOverlay .navigation_item_list .nav_item .nav_links{
+  text-decoration: none;
+  color: grey;
+}
+
+
+/* Building button*/
     
 #button_container{
   background-color: #dd3444;
@@ -66,6 +73,8 @@ body{
   top: 78%;
 }
 
+/* Change button to x on transition */
+
 .icon.close #span1{
   transform: rotate(45deg);
   top: 48%;
@@ -76,13 +85,28 @@ body{
   top: 48%;
 }
 
+/* Nav overlay that appears on button click */
+#navigationOverlay{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #151719;
+  z-index: 4;
+}
+
+/* Main photo showcase */
 #showcase {
     background: url("../images/portfoliocodingbackground.jpg") center/cover no-repeat;
     min-height: 750px;
     position: relative; }
     #showcase #header {
       z-index: 2; }
-    #showcase #overlay {
+    #showcase #mainImageOverlay {
       background: rgba(0, 0, 0, 0.8);
       position: absolute;
       top: 0;
@@ -102,6 +126,10 @@ body{
 .project_hrs{
   border-color: #dd3444;
   border-width: 0.1rem;
+}
+
+.tech_logos{
+  height: 50px;
 }
 
 .hidden_element{
