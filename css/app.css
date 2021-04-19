@@ -27,6 +27,7 @@ body{
 
 #navigationOverlay .navigation_item_list .nav_item{
   margin-top: 60px;
+  background-color: #dd3444;
 }
 
 #navigationOverlay .navigation_item_list .nav_item .nav_links{
