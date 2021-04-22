@@ -21,8 +21,6 @@ $(document).ready(function() {
         }
     });
 
-    // Elevate item on hover in navigationOverlay
-    
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
     
